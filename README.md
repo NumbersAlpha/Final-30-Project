@@ -39,10 +39,10 @@ https://sonic-pi.mehackit.org/exercises/en/09-keys-chords-and-scales/01-piano.ht
 * Possible music theory
 
 <em> A list of milestones </em>
-* Use coordinates and commit them to specific keys / notes
-* Use special moves like castling as special key inputs / chords
-* Able to program a chess opening into a list of notes / chords
-* Design an efficient way to import code into Sonic Pi
-* Make the music sound good
-
-
+* (June 11) Use coordinates and commit them to specific keys / notes
+* (June 12) Use special moves like castling as special key inputs / chords
+* (June 14) Able to program a chess opening into a list of notes / chords
+* (June 15-16) Buffering
+* (June 17) Able to program a chess game into a list of notes / chords
+* (If possible June 17) Design an efficient way to import code into Sonic Pi
+* (June 18) Make the music sound good
