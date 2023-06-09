@@ -29,14 +29,14 @@ https://sonic-pi.mehackit.org/exercises/en/09-keys-chords-and-scales/01-piano.ht
 
 <em> Why you are motivated to do this project </em>
 * Combines the arts of code and music into one project.
-
+* More specifically, it allows for the arts of chess to be transformed into the arts of music and code.
 
 <em> How you will incorporate your learnings from this course into the project </em>
 * Basic coding
 * Art of design
 * Planning
 * Thinking 
-
+* Possible music theory
 
 <em> A list of milestones </em>
 * Use coordinates and commit them to specific keys / notes
