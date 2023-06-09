@@ -17,13 +17,19 @@ https://sonic-pi.mehackit.org/exercises/en/09-keys-chords-and-scales/01-piano.ht
  <b> Create and submit a PROPOSAL for your project that includes: </b>
 
 <em> A clear and articulate description of your project idea </em>
-* Take chess coordinates and convert them into music
-* Use individual coordinates as keys / chords
-* Use a combination of coordinates a chords
-* Use the significance of captures and checks as chords
+* Take chess notation and convert coordinates into music
+* Separate black and white moves
+* Use chess files as a chord (starts at a point, ex. [A4])
+* Use chess ranks as a chord (starts at a point, ex. [C4])
+* Use Sonic Pi functions to make coding easier and more efficent
+* Use arrays to sort chess notation from start to finish
+* Use special moves like <i> castling </i> as special combination of chords
+* Make it sound good
+
 
 <em> Why you are motivated to do this project </em>
 * Combines the arts of code and music into one project.
+
 
 <em> How you will incorporate your learnings from this course into the project </em>
 * Basic coding
@@ -31,9 +37,12 @@ https://sonic-pi.mehackit.org/exercises/en/09-keys-chords-and-scales/01-piano.ht
 * Planning
 * Thinking 
 
+
 <em> A list of milestones </em>
 * Use coordinates and commit them to specific keys / notes
 * Use special moves like castling as special key inputs / chords
 * Able to program a chess opening into a list of notes / chords
 * Design an efficient way to import code into Sonic Pi
 * Make the music sound good
+
+
