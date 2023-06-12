@@ -1,5 +1,5 @@
 # Welcome to Sonic Pi v3.1
-use_synth :piano
+use_synth :tech_saws
 set :bpm , 100
 define :p do
   play :C4
@@ -101,29 +101,9 @@ define :file8 do
   rank8
 end
 
-black_pieces = []
-black_file = []
-black_rank = []
 
-p
-n
-b
-r
-q
-k
-rank1
-rank2
-rank3
-rank4
-rank5
-rank6
-rank7
-rank8
-file1
-file2
-file3
-file4
-file5
-file6
-file7
-file8
+game = ['e','4',' ','e','5',' ','n','f','3',' ','n','c','6']
+
+define :moves do
+  i = 0
+  end
