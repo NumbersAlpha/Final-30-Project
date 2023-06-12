@@ -102,8 +102,17 @@ define :file8 do
 end
 
 
-game = ['e','4',' ','e','5',' ','n','f','3',' ','n','c','6']
+game = ['n','b']
 
-define :moves do
-  i = 0
+
+i = 0
+game.length.times do
+  i = i + 1
+  if game[i] = 'n'
+    n
+  elsif game[i] = 'b'
+    b
+  elsif game[i] = 'r'
+    r
   end
+end
