@@ -54,6 +54,24 @@ define :check do
   play chord(:A4, :minor)
 end
 
+define :mate do
+  play chord(:G4, :major)
+  play chord(:C4, :minor)
+  sleep 0.2
+  play chord(:F4, :halfdim)
+  
+  sleep 0.8
+  
+  play chord(:G4, :major)
+  play chord(:C4, :minor)
+  sleep 0.2
+  play chord(:F4, :halfdim)
+  sleep 0.3
+  play chord(:C4, :halfdiminished)
+  sleep 0.2
+  play chord(:Bb4, :halfdim)
+end
+
 define :rank1 do
   play chord(:C4, :major)
   sleep 0.5
@@ -133,5 +151,6 @@ game = [n, rank6, file3,
         b, rank5, file7,
         oo,
         oo,
+        mate,
         
         ].tick
