@@ -25,10 +25,24 @@ end
 define :q do
   play :G4
   sleep 0.5
-  
 end
+
 define :k do
   play :A4
+  sleep 0.5
+end
+
+define :oo do
+  play :F4
+  sleep 0.125
+  play :A4
+  sleep 0.5
+end
+
+define :ooo do
+  play :F4
+  sleep 0.125
+  play chord(:A4, :major)
   sleep 0.5
 end
 
@@ -103,4 +117,13 @@ define :file8 do
 end
 
 
-game = [n,b].tick
+game = [n, rank6, file3,
+        n, rank4, file4,
+        n, rank6, file6,
+        b, rank5, file2,
+        n, rank2, file3,
+        b, rank5, file7,
+        oo,
+        oo,
+        
+        ].tick
