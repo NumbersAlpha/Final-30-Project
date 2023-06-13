@@ -46,6 +46,14 @@ define :ooo do
   sleep 0.5
 end
 
+define :check do
+  play :G4
+  sleep 0.2
+  play chord(:G4, :major)
+  sleep 0.8
+  play chord(:A4, :minor)
+end
+
 define :rank1 do
   play chord(:C4, :major)
   sleep 0.5
