@@ -1,3 +1,4 @@
+
 # Welcome to Sonic Pi v3.1
 use_synth :tech_saws
 set :bpm , 100
@@ -102,17 +103,4 @@ define :file8 do
 end
 
 
-game = ['n','b']
-
-
-i = 0
-game.length.times do
-  i = i + 1
-  if game[i] = 'n'
-    n
-  elsif game[i] = 'b'
-    b
-  elsif game[i] = 'r'
-    r
-  end
-end
+game = [n,b].tick
