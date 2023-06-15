@@ -117,35 +117,35 @@ define :rank8 do
   sleep 0.5
 end
 
-define :file1 do
+define :filea do
   rank1
 end
 
-define :file2 do
+define :fileb do
   rank2
 end
 
-define :file3 do
+define :filec do
   rank3
 end
 
-define :file4 do
+define :filed do
   rank4
 end
 
-define :file5 do
+define :filee do
   rank5
 end
 
-define :file6 do
+define :filef do
   rank6
 end
 
-define :file7 do
+define :fileg do
   rank7
 end
 
-define :file8 do
+define :fileh do
   rank8
 end
 
