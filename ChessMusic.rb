@@ -32,6 +32,13 @@ define :k do
   sleep 0.5
 end
 
+define :x do
+  play :A4
+  sleep 0.125
+  play chord(:G4, :major)
+  sleep 0.5
+end
+
 define :oo do
   play :F4
   sleep 0.125
