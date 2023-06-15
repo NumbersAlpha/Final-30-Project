@@ -21,8 +21,8 @@ https://sonic-pi.mehackit.org/exercises/en/09-keys-chords-and-scales/01-piano.ht
 <em> A clear and articulate description of your project idea </em>
 * Take chess notation and convert coordinates into music
 * Separate black and white moves
-* Use chess files as a chord (starts at a point, ex. [1-8])
-* Use chess ranks as a chord (starts at a point, ex. [A-H])
+* Use chess files as a chord (starts at a point, ex. [A-H])
+* Use chess ranks as a chord (starts at a point, ex. [1-8])
 * Use Sonic Pi functions to make coding easier and more efficient
 * Use arrays to sort chess notation from start to finish
 * Use special moves like <i> castling </i> as special combination of chords
