@@ -2,32 +2,32 @@
 # Welcome to Sonic Pi v3.1
 use_synth :tech_saws
 set :bpm , 100
-define :p do
+define :pawn do
   play :C4
   sleep 0.5
 end
 
-define :n do
+define :knight do
   play :D4
   sleep 0.5
 end
 
-define :b do
+define :bishop do
   play :E4
   sleep 0.5
 end
 
-define :r do
+define :rook do
   play :F4
   sleep 0.5
 end
 
-define :q do
+define :queen do
   play :G4
   sleep 0.5
 end
 
-define :k do
+define :king do
   play :A4
   sleep 0.5
 end
@@ -150,12 +150,12 @@ define :fileh do
 end
 
 
-game = [n, rank6, file3,
-        n, rank4, file4,
-        n, rank6, file6,
-        b, rank5, file2,
-        n, rank2, file3,
-        b, rank5, file7,
+game = [knight, rank6, file3,
+        knight, rank4, file4,
+        knight, rank6, file6,
+        bishop, rank5, file2,
+        knight, rank2, file3,
+        bishop, rank5, file7,
         oo,
         oo,
         mate,
