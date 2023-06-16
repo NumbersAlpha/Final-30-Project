@@ -150,12 +150,12 @@ define :fileh do
 end
 
 
-game = [knight, rank6, file3,
-        knight, rank4, file4,
-        knight, rank6, file6,
-        bishop, rank5, file2,
-        knight, rank2, file3,
-        bishop, rank5, file7,
+game = [knight, rank6, filec,
+        knight, rank4, filed,
+        knight, rank6, filef,
+        bishop, rank5, fileb,
+        knight, rank2, filec,
+        bishop, rank5, fileg,
         oo,
         oo,
         mate,
