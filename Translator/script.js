@@ -1,4 +1,4 @@
-const game = 'e4 e5 Nf3 f6 c3 Bd6 d4 Nh6 dxe5 fxe5 c4 Qe7 Nc3 b6 Bd3 a5 O-O Na6 Nb5 Nc5  Be3 Bb7  Bxc5 bxc5 Qa4 O-O-O  Qxa5 c6Na7+ Kb8 Qb6 Bc7 Nxc6+ dxc6 Qb4 cxb4  a3 bxa3 Rxa3 Bb6 b4 c5 bxc5 Bxc5 Rb3 Bb6 Rfb1 Rxd3 Rxb6 Rxf3 Rxb7+ Qxb7 Rxb7+ Kxb7 Kf1 Ra3 Ke2 Rc8 Kd2 Rxc4 Ke2 Rc2+ Kd1 Rca2 Kc1 Rxf2 Kb1 Raa2 Kc1 Rxg2 Kd1 Rxh2 Ke1 Ng4 Kf1 Ne3+ Kg1 Rhg2+ Kh1 Ra1#'
+const game = '1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Bf5 5. Bb5+ Nc6 6. O-O e6 7. Bf4 Nf6 8. Nc3 a6 9. Bxc6+ bxc6 10. Ne5 Qb6 11. b3 Bd6 12. Re1 O-O 13. Na4 Qa7 14. c3 c5 15. dxc5 Bxc5 16. Nxc5 Qxc5 17. Qd3 Bxd3'
   
 let split = game.split(' ')
 
@@ -19,11 +19,14 @@ files.forEach(element => rank(element))
 
 
 let special_moves = []
-ranks.forEach(element => special(element))
+ranks.forEach(element => special_pieces(element))
 document.write(special_moves)
 
 function pawn_and_castle(element){
-  if(element.match(/[O]/)){
+  if(element.match(/[.]/)){
+    
+  }
+  else if(element.match(/[O]/)){
    if(element.length == 3){
      pawns_and_castling.push('o')
    }
@@ -31,16 +34,8 @@ function pawn_and_castle(element){
       pawns_and_castling.push('O')
     }
   }
-  else if(element.length == 2){
-    pawns_and_castling.push(`p${element}`)
-  }
-  else if(element.length == 4){
-    if(element.match(/[a-h]/)){
-       pawns_and_castling.push(`p${element}`)
-    }
-    else{
-      pawns_and_castling.push(`${element}`)
-    }
+  else if(!element.match(/[NBRQK]/)){
+    pawns_and_castling.push(`p${element}`)            
   }
   else{
     pawns_and_castling.push(element)
@@ -70,7 +65,7 @@ function file(element){
   }
 }
 
-function special(element){
+function special_pieces(element){
   if(element.match(/[o]/)){
     special_moves.push('oo')
   }
@@ -83,7 +78,27 @@ function special(element){
   else if(element.match(/[#]/)){
     special_moves.push('mate')
   }
+  else if(element.match(/[p]/)){
+    special_moves.push('pawn')                  
+  }
+  else if(element.match(/[B]/)){
+    special_moves.push('bishop')               
+  }
+  else if(element.match(/[R]/)){
+    special_moves.push('rook')                                 
+  }
+  else if(element.match(/[N]/)){
+    special_moves.push('knight')                                  
+  }
+  else if(element.match(/[K]/)){
+    special_moves.push('king')                                  
+  }
+  else if(element.match(/[Q]/)){
+    special_moves.push('queen')                                    
+  }
   else(
     special_moves.push(element)
   )
 }
+
+
