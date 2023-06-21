@@ -62,21 +62,19 @@ define :check do
 end
 
 define :mate do
-  play chord(:G4, :major)
   play chord(:C4, :minor)
-  sleep 0.2
-  play chord(:F4, :halfdim)
-  
-  sleep 0.8
-  
-  play chord(:G4, :major)
-  play chord(:C4, :minor)
-  sleep 0.2
-  play chord(:F4, :halfdim)
-  sleep 0.3
-  play chord(:C4, :halfdiminished)
-  sleep 0.2
-  play chord(:Bb4, :halfdim)
+  sleep 0.25
+  play chord(:B4, :diminished)
+  sleep 0.5
+  play chord(:D4, :major)
+  sleep 0.5
+  play [:Fs4, :A4, :D5]
+  sleep 0.5
+  play [:A4, :D5, :Fs5]
+  sleep 0.5
+  play [:D5, :Fs5, :A5]
+  sleep 0.5
+  play chord(:D3, :major)
 end
 
 define :rank1 do
