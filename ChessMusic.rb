@@ -51,11 +51,18 @@ end
 # Defines taking a piece as "x"
 # it plays a note when called
 define :x do
-  play :A4
-  sleep 0.125
-  play chord(:G4, :major)
-  sleep 0.5
+  use_synth :prophet
+  with_fx :reverb do
+    play :A4
+    sleep 0.25
+    play chord(:A4, :M7)
+    sleep 0.25
+    sample :bd_tek
+    play chord(:A4, :add2)
+    sleep 1
+  end
 end
+
 
 # Defines castling move as "oo"
 # it plays a note when called
