@@ -54,11 +54,11 @@ define :ooo do
 end
 
 define :check do
-  play :G4
-  sleep 0.2
-  play chord(:G4, :major)
-  sleep 0.8
-  play chord(:A4, :minor)
+  play chord(:C5, :minor)
+  sleep 0.125
+  sleep 0.0625
+  play chord(:F4, :diminished)
+  sleep 0.5
 end
 
 define :mate do
