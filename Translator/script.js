@@ -1,5 +1,5 @@
 //The chess game directly copy and pasted directly from Chess.com with small adjustments to make it a string.
-const game = '1. d4 d5 2. c4 e6 3. e3 Bd6 4. Nc3 Nf6 5. Nf3 c6 6. Bd3 Nbd7 7. cxd5 cxd5 8. O-O b6 9. h3 Bb7 10. Nb5 a6 11. Nxd6+ Ke7 12. Nxb7 Qc7 13. Ne5 Qxb7 14. Nxd7 Qxd7 15. b3 g5 16. Ba3+ Ke8 17. Qf3 Rf8 18. Qxf6 Qe7 19. Bxe7 Rg8 20. Bd6 Ra7 21. Bxh7 Rf8 22. Bxf8 Kxf8 23. Rac1 Ra8 24. Qh8+ Ke7 25. Qxa8 Kf6 26. f4 Kg7 27. fxg5 Kxh7 28. Rxf7+ Kg6 29. Qg8+ Kh5 30. Rh7#'
+const game = '1. d4 d6 2. e3 c5 3. Nf3 cxd4 4. Nxd4 Nc6 5. c4 Nxd4 6. Qxd4 Nf6 7. Bd3 e5 8. Qc3 Be7 9. f3 O-O 10. Nd2 Be6 11. b3 d5 12. cxd5 Bxd5 13. e4 Bc6 14. Nc4 Nd7 15. Ba3 Bxa3 16. Nxa3 Nb6 17. O-O-O Qg5+ 18. Qd2 Qf6 19. g4 Rfd8 20. Rhf1 Rd6 21. h3 Rad8 22. Nc4 Nxc4 23. bxc4 Rxd3 24. Qxd3 Rxd3 25. Rxd3 h6 26. Rfd1 Kh7 27. Rd6 Qxf3 28. R6d3 Qxe4 29. Kd2 Qxc4 30. Rc3 Qb4 31. Rc1 Qb2+ 32. R1c2 Qb4 33. Kc1 Qf4+ 34. Kb2 a5 35. Ka3 Qb4#'
 
 //Splits each move and number into individual elements.
 let split = game.split(' ')
@@ -25,9 +25,9 @@ files.forEach(element => rank(element))
 
 //Changes N, B, R, Q, K, and p into full piece names and checks, checkmates, and castling into names for the main program.
 let specialMoves_Pieces = []
-ranks.forEach(element => specialMovesAndpieces(element
+ranks.forEach(element => specialMovesAndpieces(element))
 //Writes the finished translation into a easy copy and paste for the main program
-document.write(special_moves)
+document.write(specialMoves_Pieces)
 
 
 function pawn_and_castle(element){
@@ -89,39 +89,39 @@ function file(element){
 function specialMovesAndpieces(element){
   //It if the element is a queen or king-side castle, return 'ooo' or 'oo' respectively
   if(element.match(/[o]/)){
-    special_moves.push('oo')
+    specialMoves_Pieces.push('oo')
   }
   else if(element.match(/[O]/)){
-    special_moves.push('ooo')
+    specialMoves_Pieces.push('ooo')
   }
   //If the move is a check or checkmate, return 'check' or 'mate' respectively
   else if(element.match(/[+]/)){
-    special_moves.push('check')
+    specialMoves_Pieces.push('check')
   }
   else if(element.match(/[#]/)){
-    special_moves.push('mate')
+    specialMoves_Pieces.push('mate')
   }
     //Turns all chess pieces into full name counterparts
   else if(element.match(/[p]/)){
-    special_moves.push('pawn')                  
+    specialMoves_Pieces.push('pawn')                  
   }
   else if(element.match(/[B]/)){
-    special_moves.push('bishop')               
+    specialMoves_Pieces.push('bishop')               
   }
   else if(element.match(/[R]/)){
-    special_moves.push('rook')                                 
+    specialMoves_Pieces.push('rook')                                 
   }
   else if(element.match(/[N]/)){
-    special_moves.push('knight')                                  
+    specialMoves_Pieces.push('knight')                                  
   }
   else if(element.match(/[K]/)){
-    special_moves.push('king')                                  
+    specialMoves_Pieces.push('king')                                  
   }
   else if(element.match(/[Q]/)){
-    special_moves.push('queen')                                    
+    specialMoves_Pieces.push('queen')                                    
   }
     //Push everything else along (files and ranks)
   else(
-    special_moves.push(element)
+    specialMoves_Pieces.push(element)
   )
 }
